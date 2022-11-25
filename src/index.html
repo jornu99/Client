@@ -4,43 +4,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Panteón_Jaime</title>
+    <title>Inicio</title>
 </head>
 
 <body class="m-0 v-100 row justify-content-center align-item-center">
-    <div class="col-xxl-5 col-lg-5 col-md-8 col-sm-12 pt-5 mt-5">
+    <div class="col-xxl-5 col-lg-5 col-md-8 col-sm-12 pt-5">
+
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Home</a></li>
+            </ol>
+        </nav>
 
         <div class="card text-white bg-info">
             <div class="card-header text-center">
-                <img src="/src/img/login.png" class="img-fluid" alt="Imagen del formulario login">
-                <h2>Formulario Registro</h2>
+                <img src="../assets/img/columna-rota.png" height="200" width="110" class="rounded float-start"
+                    alt="Imagen del index izquierda">
+                <img src="../assets/img/panteon.png" height="200" width="220" class="rounded"
+                    alt="Imagen del index centro">
+                <img src="../assets/img/columna.png" height="200" width="110" class="rounded float-end"
+                    alt="Imagen del index derecha">
+                <h2>Inicio</h2>
             </div>
             <div class="card-body">
-                <main class="form-signin w-100 m-auto">
-                    <form>
-                        <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
-
-                        <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInput"
-                                placeholder="nombre@ejemplo.com">
-                            <label for="floatingInput">Dirección email</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="contraseña">
-                            <label for="floatingPassword">Contraseña</label>
-                        </div>
-
-                        <div class="checkbox mb-3">
-                            <label>
-                                <input type="checkbox" value="remember-me"> Recuérdame
-                            </label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar sesión</button>
-                    </form>
-                </main>
+                <form>
+                    <a href="./html/registro.html" class="btn btn-dark align-item-center">Registrarse</a>
+                    <a href="./html/login.html" class="btn btn-dark align-item-center">Iniciar sesión</a>
+                </form>
             </div>
         </div>
-
     </div>
 
 </body>
