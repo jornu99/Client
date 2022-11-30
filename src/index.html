@@ -2,39 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio</title>
 </head>
 
 <body class="m-0 v-100 row justify-content-center align-item-center">
-    <div class="col-xxl-5 col-lg-5 col-md-8 col-sm-12 pt-5">
 
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-            aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Home</a></li>
-            </ol>
-        </nav>
-
-        <div class="card text-white bg-info">
-            <div class="card-header text-center">
-                <img src="../assets/img/columna-rota.png" height="200" width="110" class="rounded float-start"
-                    alt="Imagen del index izquierda">
-                <img src="../assets/img/panteon.png" height="200" width="220" class="rounded"
-                    alt="Imagen del index centro">
-                <img src="../assets/img/columna.png" height="200" width="110" class="rounded float-end"
-                    alt="Imagen del index derecha">
-                <h2>Inicio</h2>
-            </div>
-            <div class="card-body">
-                <form>
-                    <a href="./html/registro.html" class="btn btn-dark align-item-center">Registrarse</a>
-                    <a href="./html/login.html" class="btn btn-dark align-item-center">Iniciar sesión</a>
-                </form>
-            </div>
-        </div>
+  <!-- HEADER -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./assets/img/logo.png" height="60" width="60"
+          class="img-fluid logo" alt="Imagen del header logo"></a>
+      <h1 class="text-white">PANTEÓN GRIEGO</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menú
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="./html/login.html">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- BREADCRUMBS -->
+  <nav
+    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+    aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Home</a></li>
+    </ol>
+  </nav>
+
+  <div class="col-xxl-5 col-lg-5 col-md-8 col-sm-12 pt-5">
+
+    <!-- PANEL -->
+    <div class="card text-white bg-info">
+      <div class="card-header text-center">
+        <img src="../assets/img/columna-rota.png" height="120" width="120" class="img-fluid"
+          alt="Imagen del index izquierda">
+        <img src="../assets/img/panteon.png" height="150" width="150" class="img-fluid" alt="Imagen del index centro">
+        <img src="../assets/img/columna.png" height="120" width="120" class="img-fluid" alt="Imagen del index derecha">
+        <h2>Inicio</h2>
+      </div>
+      <div class="card-body">
+        <form>
+          <a href="./html/registro.html" class="btn btn-dark align-item-center">Registrarse</a>
+          <a href="./html/login.html" class="btn btn-dark align-item-center">Iniciar sesión</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 py-5">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="w-100 flex-shrink-0 bg-dark">
+    <div class="container py-4">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="h1 text-white">Panteón Griego.</h5>
+          <p class="small text-muted">En esta página web organizamos el Panteón griego, con todas sus transacciones.</p>
+          <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+              href="https://github.com/jornu99/Client">Panteón Jaime</a></p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">Dioses</h5>
+          <ul class="list-unstyled text-muted">
+            <li><a href="./html/zeus.html">Zeus</a></li>
+            <li><a href="./html/poseidon.html">Poseidón</a></li>
+            <li><a href="./html/hades.html">Hades</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">Pruebas</h5>
+          <ul class="list-unstyled text-muted">
+            <li><a href="./html/puntuales.html">Puntuales</a></li>
+            <li><a href="./html/oraculo.html">Oráculo</a></li>
+            <ul>
+              <li><a href="./html/respuesta_libre.html">Respuesta libre</a></li>
+              <li><a href="./html/valoracion.html">Valoración</a></li>
+              <li><a href="./html/eleccion.html">Elección</a></li>
+            </ul>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-white mb-3">Contáctanos en nuestras redes</h5>
+          <ul class="redes-sociales list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" height="40" width="40"
+                  class="img-fluid logo" alt="Imagen del header logo"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.twitter.com/"><img src="./assets/img/twitter.png" height="40" width="40"
+                  class="img-fluid logo" alt="Imagen del header logo"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/"><img src="./assets/img/youtube.png" height="40" width="40"
+                  class="img-fluid logo" alt="Imagen del header logo"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/"><img src="./assets/img/linkedin.png" height="40" width="40"
+                  class="img-fluid logo" alt="Imagen del header logo"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" height="40" width="40"
+                  class="img-fluid logo" alt="Imagen del header logo"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.github.com/"><img src="./assets/img/github.png" height="40" width="40"
+                  class="img-fluid logo" alt="Imagen del header logo"></a>
+            </li>
+          </ul>
+
+          <!-- FORMULARIO PARA CONTACTO -->
+          <!-- <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt.</p>
+          <form action="#">
+            <div class="input-group mb-3">
+              <input class="form-control" type="text" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-primary" id="button-addon2" type="button"><i
+                  class="fas fa-paper-plane"></i></button>
+            </div>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
