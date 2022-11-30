@@ -9,7 +9,7 @@
 #### https://github.com/users/jornu99/projects/2/views/1
 
 ### Comandos 
-#### Para instalar el node_modules en el webpack del desafío:
+  #### Para instalar el node_modules en el webpack del desafío:
         npm install
 #### Para iniciar el webpack del desafío:
         npm start
