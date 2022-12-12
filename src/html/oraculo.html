@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Poseidón</title>
+    <title>Oráculo</title>
     <style>
         a:link {
             color: rgb(255, 111, 0);
@@ -31,62 +31,76 @@
     </style>
 </head>
 
-<body class="m-0 v-100 row justify-content-center align-item-center" style="background-image: url(../assets/img/fondo-poseidon.jpg);
+<body class="m-0 v-100 row justify-content-center align-item-center fondo-oraculo" style="width: 100%; 
+height: 100vh; 
+align-items: center;
+justify-content: center;
+background-size: 300% 300%; 
+background-image: linear-gradient(-45deg, #e33b3b 0%, #ff357f 25%, #9844b7 50%, #576fe6 100%);
+animation: background-shift 20s ease infinite;
+@keyframes background-shift 
+0%;
+background-position: 0% 50%
+50%;
+background-position: 100% 50% 
+100%; 
+background-position: 0% 50%;
                 background-size: cover;
                 background-attachment: fixed;
                 background-repeat: no-repeat;">
 
     <!-- HEADER -->
     <nav class=" navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="60" width="60"
-                class="img-fluid logo" alt="Imagen del header logo"></a>
-        <h1 class="text-white">PANTEÓN GRIEGO</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
-            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dioses
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="./zeus.html">Zeus</a></li>
-                        <li><a class="dropdown-item" href="./poseidon.html">Poseidón</a></li>
-                        <li><a class="dropdown-item" href="./hades.html">Hades</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="60" width="60"
+                    class="img-fluid logo" alt="Imagen del header logo"></a>
+            <h1 class="text-white">PANTEÓN GRIEGO</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dioses
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./zeus.html">Zeus</a></li>
+                            <li><a class="dropdown-item" href="./poseidon.html">Poseidón</a></li>
+                            <li><a class="dropdown-item" href="./hades.html">Hades</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Pruebas
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="./puntuales.html">Puntuales</a></li>
-                        <li><a class="dropdown-item" href="./oraculo.html">Oráculo</a></li>
-                    </ul>
-                </li>
-            </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pruebas
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./puntuales.html">Puntuales</a></li>
+                            <li><a class="dropdown-item" href="./oraculo.html">Oráculo</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Humanos
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="./humano.html">Humanos</a></li>
-                    </ul>
-                </li>
-            </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Humanos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./humano.html">Humanos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </nav>
 
     <!-- BREADCRUMBS -->
@@ -94,7 +108,7 @@
         aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="./poseidon.html">Poseidón</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="./hades.html">Hades</a></li>
         </ol>
     </nav>
 
@@ -109,12 +123,14 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <a href="./crea-pruebas.html">
                     <div class="carousel-item active">
-                        <img src="../assets/img/poseidon-crea-prueba.png" class="d-block w-100"
-                            alt="img carousel poseidon crea prueba">
+                        <img src="../assets/img/hades-crea-prueba.png" class="d-block w-100"
+                            alt="img carousel hades crea prueba">
                         <div class="carousel-caption d-none d-md-block borroso">
                             <h4>Crear prueba</h4>
                             <h6>Para crear pruebas de habilidad según un criterio específico a tus feligreses más
@@ -124,8 +140,8 @@
             </div>
             <div class="carousel-item">
                 <a href="./asigna-prueba.html">
-                    <img src="../assets/img/poseidon-asigna-prueba.png" class="d-block w-100"
-                        alt="img carousel poseidon asigna prueba">
+                    <img src="../assets/img/hades-asigna-prueba.png" class="d-block w-100"
+                        alt="img carousel hades asigna prueba">
                     <div class="carousel-caption d-none d-md-block borroso">
                         <h4>Asignar prueba</h4>
                         <h6>Para designar a tus pruebas a los feligreses a tu discrección.</h6>
@@ -134,11 +150,21 @@
             </div>
             <div class="carousel-item">
                 <a href="./crea-humano.html">
-                    <img src="../assets/img/poseidon-crea-humano.png" class="d-block w-100"
-                        alt="img carousel poseidon crea humano">
+                    <img src="../assets/img/hades-crea-humano-png.jpg" class="d-block w-100"
+                        alt="img carousel hades crea humano">
                     <div class="carousel-caption d-none d-md-block borroso">
                         <h4>Crear humano</h4>
                         <h6>Para crear a uno o varios de tus feligreses, ya sea a conciencia o aleatoriamente.</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="./mata-humano.html">
+                    <img src="../assets/img/hades-mata-humano.jpg" class="d-block w-100"
+                        alt="img carousel hades mata humano">
+                    <div class="carousel-caption d-none d-md-block borroso">
+                        <h4>Matar humano</h4>
+                        <h6>Para enviar al descanso eterno a tus feligreses.</h6>
                     </div>
                 </a>
             </div>
