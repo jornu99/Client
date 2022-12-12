@@ -4,3 +4,15 @@
 @import "transiciones";
 @import "animaciones";
 
+body {
+    
+
+    div #carouselExampleCaptions {
+        div {
+            .borroso {
+                background-color: rgba(0, 0, 0, 0.15);
+                backdrop-filter: blur(10px);
+            }
+        }
+    }
+}

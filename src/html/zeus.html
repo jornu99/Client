@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeus</title>
+    <style>
+        a:link {
+            color: rgb(255, 111, 0);
+        }
+
+        a:visited {
+            color: #265b89;
+        }
+
+        a:focus {
+            border-bottom: 1px solid;
+            background: #b3b1b1;
+        }
+
+        a:hover {
+            border-bottom: 1px solid;
+            background: #2c2d2e;
+        }
+
+        a:active {
+            background: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body class="m-0 v-100 row justify-content-center align-item-center fondo-zeus" style="background-image: url(../assets/img/fondo-zeus.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;"">
+
+    <!-- HEADER -->
+    <nav class=" navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="60" width="60"
+                class="img-fluid logo" alt="Imagen del header logo"></a>
+        <h1 class="text-white">PANTEÓN GRIEGO</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dioses
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="./zeus.html">Zeus</a></li>
+                        <li><a class="dropdown-item" href="./poseidon.html">Poseidón</a></li>
+                        <li><a class="dropdown-item" href="./hades.html">Hades</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pruebas
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="./puntuales.html">Puntuales</a></li>
+                        <li><a class="dropdown-item" href="./oraculo.html">Oráculo</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Humanos
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="./humano.html">Humanos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- BREADCRUMBS -->
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="./zeus.html">Zeus</a></li>
+        </ol>
+    </nav>
+
+    <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 pt-5">
+
+        <!-- CAROUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <a href="./crea-pruebas.html">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/zeus-crea-prueba.png" class="d-block w-100" heigth="300" width="600"
+                            alt="img carousel zeus crea prueba">
+                        <div class="carousel-caption d-none d-md-block borroso">
+                            <h4>Crear prueba</h4>
+                            <h6>Para crear pruebas de habilidad según un criterio específico a tus feligreses más
+                                adeptos.</h6>
+                        </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="./asigna-prueba.html">
+                    <img src="../assets/img/zeus-asigna-prueba.png" class="d-block w-100" heigth="300" width="600"
+                        alt="img carousel zeus crea humano/s">
+                    <div class="carousel-caption d-none d-md-block borroso">
+                        <h4>Asignar prueba</h4>
+                        <h6>Para designar a tus pruebas a los feligreses a tu discrección.</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="./crea-humano.html">
+                    <img src="../assets/img/zeus-crea-humano.png" class="d-block w-100" heigth="300" width="600"
+                        alt="img carousel zeus asigna prueba">
+                    <div class="carousel-caption d-none d-md-block borroso">
+                        <h4>Crear humano</h4>
+                        <h6>Para crear a uno o varios de tus feligreses, ya sea a conciencia o aleatoriamente.</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+    <!-- ESPACIO ENTRE PANEL Y FOOTER -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 py-5">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="w-100 flex-shrink-0 bg-dark">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">Panteón Griego.</h5>
+                    <p class="small text-muted">En esta página web organizamos el Panteón griego, con todas sus
+                        transacciones.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+                            href="https://github.com/jornu99/Client">Panteón Jaime</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Dioses</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="./zeus.html">Zeus</a></li>
+                        <li><a href="./poseidon.html">Poseidón</a></li>
+                        <li><a href="./hades.html">Hades</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Pruebas</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="./puntuales.html">Puntuales</a></li>
+                        <li><a href="./oraculo.html">Oráculo</a></li>
+                        <ul>
+                            <li><a href="./respuesta_libre.html">Respuesta libre</a></li>
+                            <li><a href="./valoracion.html">Valoración</a></li>
+                            <li><a href="./eleccion.html">Elección</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Contáctanos en nuestras redes</h5>
+                    <ul class="redes-sociales list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/"><img src="../assets/img/facebook.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.twitter.com/"><img src="../assets/img/twitter.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/"><img src="../assets/img/youtube.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/"><img src="../assets/img/linkedin.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/"><img src="../assets/img/instagram.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.github.com/"><img src="../assets/img/github.png" height="40" width="40"
+                                    class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
