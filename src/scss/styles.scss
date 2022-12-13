@@ -4,9 +4,29 @@
 @import "transiciones";
 @import "animaciones";
 
+// GENERAL --
 body {
-    .fondo-oraculo {
-        
+    a:link {
+        color: rgb(255, 111, 0);
+    }
+
+    a:visited {
+        color: #265b89;
+    }
+
+    a:focus {
+        border-bottom: 1px solid;
+        background: #b3b1b1;
+    }
+
+    a:hover {
+        border-bottom: 1px solid;
+        background: #2c2d2e;
+    }
+
+    a:active {
+        background: #000000;
+        color: #ffffff;
     }
 
     div #carouselExampleCaptions {
@@ -16,5 +36,63 @@ body {
                 backdrop-filter: blur(10px);
             }
         }
+    }
+}
+
+// PUNTUALES --
+//-- PUNTUALES - DELANTE --
+.z-front{
+    z-index: 1;
+}
+
+//-- PUNTUALES - TABS --
+.tabs {
+    display: flex;
+    flex-wrap: wrap; // make sure it wraps
+}
+
+.tabs label {
+    order: 1; // Put the labels first
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #90CAF9;
+    font-weight: bold;
+    transition: background ease 0.2s;
+}
+
+.tabs .tab {
+    order: 99; // Put the tabs last
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked+label {
+    background: #fff;
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+@media (max-width: 45em) {
+
+    .tabs .tab,
+    .tabs label {
+        order: initial;
+    }
+
+    .tabs label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0.2rem;
     }
 }
