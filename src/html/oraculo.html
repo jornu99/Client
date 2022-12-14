@@ -14,7 +14,9 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="60" width="60"
                     class="img-fluid logo" alt="Imagen del header logo"></a>
-            <h1 class="text-white">PANTEÓN GRIEGO</h1>
+            <a href="../index.html">
+                <h1 class="text-white">PANTEÓN GRIEGO</h1>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -74,23 +76,52 @@
 
     <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 pt-5 tabs">
         <input type="radio" name="tabs" id="tabone" checked="checked">
-        <label for="tabone">Tab One</label>
+        <label for="tabone">Respuesta libre</label>
         <div class="tab">
-            <h1>Tab One Content</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <form action="" method="post" enctype="multipart/form-data" class="formulario">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                            <img src="../assets/img/oraculo-respuesta-libre.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 pt-2">
+                            <label>Atributo
+                                <select name="atributo">
+                                    <option value="1">Sabiduria</option>
+                                    <option value="2">Nobleza</option>
+                                    <option value="3">Virtud</option>
+                                    <option value="4">Maldad</option>
+                                    <option value="5">Audacia</option>
+                                </select>
+                            </label>
+                            <label>Descripción
+                                <textarea></textarea>
+                            </label>
+                            <label>Dificultad
+                                <input type="range" class="form-range" value="0" min="0" max="3" step="1">
+                            </label>
+                            <label>Destino
+                                <select name="atributo">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <input type="radio" name="tabs" id="tabtwo">
-        <label for="tabtwo">Tab Two</label>
+        <label for="tabtwo">Valoración</label>
         <div class="tab">
             <h1>Tab Two Content</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -101,7 +132,7 @@
         </div>
 
         <input type="radio" name="tabs" id="tabthree">
-        <label for="tabthree">Tab Three</label>
+        <label for="tabthree">Elección</label>
         <div class="tab">
             <h1>Tab Three Content</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
