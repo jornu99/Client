@@ -1,3 +1,20 @@
+// INDEX --
+//-- BOTÓN --
+@mixin zoom(){
+    &:hover{
+        transform: scale(1.3);
+        z-index: 100;
+    }
+}
+
+// INICIO --
+//-- BOTÓN --
+@mixin btnTuerce(){
+    &:hover{
+        transform: skew(10deg, 10deg);
+    }
+}
+
 // ORACULO -- 
 //-- TABS --
 .tabs {
