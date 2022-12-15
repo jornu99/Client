@@ -1,18 +1,22 @@
-//-- ORACULO - TABS --
+// ORACULO -- 
+//-- TABS --
 .tabs {
     display: flex;
     flex-wrap: wrap; 
 }
 
-.tabs .tab-color {
+.tabs label {
     order: 1; 
     display: block;
     padding: 1rem 2rem;
     margin-right: 0.2rem;
-    cursor: pointer;
     background: #90CAF9;
     font-weight: bold;
     transition: background ease 0.5s;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .tabs .tab {

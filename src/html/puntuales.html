@@ -8,10 +8,7 @@
 
 </head>
 
-<body class="m-0 v-100 row justify-content-center align-item-center fondo-puntuales" style="
-                background-size: cover;
-                background-attachment: fixed;
-                background-repeat: no-repeat;">
+<body class="m-0 v-100 row justify-content-center align-item-center fondo-puntuales">
 
     <!-- HEADER -->
     <nav class=" navbar navbar-dark bg-dark z-front">
@@ -78,32 +75,61 @@
         </ol>
     </nav>
 
-    <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 pt-5 background">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- PANEL -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-2 col-lg-2 col-md-1"></div>
+            <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone">Puntuales</label>
+                <div class="tab">
+                    <form action="" method="post" enctype="multipart/form-data" class="formulario">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <img src="../assets/img/oraculo-puntuales.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 pt-2">
+                                    <label>Atributo
+                                        <select name="atributo">
+                                            <option value="1">Sabiduria</option>
+                                            <option value="2">Nobleza</option>
+                                            <option value="3">Virtud</option>
+                                            <option value="4">Maldad</option>
+                                            <option value="5">Audacia</option>
+                                        </select>
+                                    </label>
+                                    <label>Descripción
+                                        <textarea></textarea>
+                                    </label>
+                                    <label>Dificultad
+                                        <input type="range" class="form-range" value="0" min="0" max="3" step="1">
+                                    </label>
+                                    <label>Destino
+                                        <select name="atributo">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-1">
+                                    <a href="./puntuales.html" class="btn btn-dark text-white formulario">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-lg-2 col-md-1"></div>
+        </div>
     </div>
 
     <!-- ESPACIO ENTRE PANEL Y FOOTER -->
@@ -116,38 +142,18 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="w-100 flex-shrink-0 bg-dark z-front">
+    <footer class="w-100 flex-shrink-0 bg-dark">
         <div class="container py-4">
             <div class="row gy-4 gx-5">
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                     <h5 class="h1 text-white">Panteón Griego.</h5>
                     <p class="small text-muted">En esta página web organizamos el Panteón griego, con todas sus
                         transacciones.</p>
                     <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
                             href="https://github.com/jornu99/Client">Panteón Jaime</a></p>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Dioses</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li><a href="./zeus.html">Zeus</a></li>
-                        <li><a href="./poseidon.html">Poseidón</a></li>
-                        <li><a href="./hades.html">Hades</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Pruebas</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li><a href="./puntuales.html">Puntuales</a></li>
-                        <li><a href="./oraculo.html">Oráculo</a></li>
-                        <ul>
-                            <li><a href="./respuesta_libre.html">Respuesta libre</a></li>
-                            <li><a href="./valoracion.html">Valoración</a></li>
-                            <li><a href="./eleccion.html">Elección</a></li>
-                        </ul>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                     <h5 class="text-white mb-3">Contáctanos en nuestras redes</h5>
                     <ul class="redes-sociales list-inline">
                         <li class="list-inline-item">

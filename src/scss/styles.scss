@@ -4,14 +4,14 @@
 @import "transiciones";
 @import "animaciones";
 
-// GENERAL --
 body {
+    // GENERAL --
     a:link {
         color: rgb(255, 111, 0);
     }
 
     a:visited {
-        color: #265b89;
+        color: #3f88c7;
     }
 
     a:focus {
@@ -45,5 +45,8 @@ body {
     }
 
     // ORÁCULO --
-    //-- BARRA PROGRESO
+    //-- BOTONES --
+    .formulario {
+        align-self: flex-end;
+    }
 }
