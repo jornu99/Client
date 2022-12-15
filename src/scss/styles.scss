@@ -5,6 +5,7 @@
 @import "animaciones";
 
 body {
+
     // GENERAL --
     a:link {
         color: rgb(255, 111, 0);
@@ -29,6 +30,16 @@ body {
         color: #ffffff;
     }
 
+    .fo-down {
+        background: black;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    // DIOSES --
+    //-- CAROUSEL --
     div #carouselExampleCaptions {
         div {
             .borroso {
@@ -45,8 +56,5 @@ body {
     }
 
     // ORÁCULO --
-    //-- BOTONES --
-    .formulario {
-        align-self: flex-end;
-    }
+    //-- --
 }
