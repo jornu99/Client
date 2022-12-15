@@ -4,4 +4,86 @@
 @import "transiciones";
 @import "animaciones";
 
+body {
+    // GENERAL --
+    a:link {
+        color: rgb(255, 111, 0);
+    }
 
+    a:visited {
+        color: #3f88c7;
+    }
+
+    a:focus {
+        border-bottom: 1px solid;
+        background: #b3b1b1;
+    }
+
+    a:hover {
+        border-bottom: 1px solid;
+        background: #2c2d2e;
+    }
+
+    a:active {
+        background: #000000;
+        color: #ffffff;
+    }
+
+    .fo-down {
+        background: black;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    // INDEX --
+    //-- BOTÓN --
+    .zoom {
+        transition: all 0.5s;
+        @include zoom();
+    }
+
+    // INICIO --
+    //-- BOTÓN --
+    .tuerce {
+        transition: all 0.2s;
+        @include btnTuerce();
+    }
+
+    .cambiaPosicion3D {
+        transition: all 0.2s;
+        @include cambiaDePosicion3D();
+    }
+
+    // REGISTRO --
+    //-- BOTÓN --
+    .cambiaColor {
+        @include cambiaDeColor();
+    }
+
+    // LOGIN --
+    //-- BOTÓN --
+    .cambiaPosicion {
+        transition: all 0.2s;
+        @include cambiaDePosicion();
+    }
+
+    // DIOSES --
+    //-- CAROUSEL --
+    div #carouselExampleCaptions {
+        div {
+            .borroso {
+                background-color: rgba(0, 0, 0, 0.15);
+                backdrop-filter: blur(10px);
+            }
+        }
+    }
+
+    // PUNTUALES --
+    //-- DELANTE --
+    .z-front {
+        z-index: 1;
+    }
+
+}

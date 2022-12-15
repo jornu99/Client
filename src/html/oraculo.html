@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oráculo</title>
+    <link rel="icon" href="../assets/img/logo.png">
+</head>
+
+<body class="m-0 v-100 row justify-content-center align-item-center fondo-oraculo">
+
+    <!-- HEADER -->
+    <nav class=" navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="60" width="60"
+                    class="img-fluid logo" alt="Imagen del header logo"></a>
+            <a href="../index.html">
+                <h1 class="text-white">PANTEÓN GRIEGO</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dioses
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./zeus.html">Zeus</a></li>
+                            <li><a class="dropdown-item" href="./poseidon.html">Poseidón</a></li>
+                            <li><a class="dropdown-item" href="./hades.html">Hades</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pruebas
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./puntuales.html">Puntuales</a></li>
+                            <li><a class="dropdown-item" href="./oraculo.html">Oráculo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Humanos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./humano.html">Humanos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMBS -->
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="./oraculo.html">Oráculo</a></li>
+        </ol>
+    </nav>
+
+    <!-- PESTAÑAS -->
+    <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 pt-5 tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone" class="pointer">Respuesta libre</label>
+        <div class="tab">
+            <form action="" method="post" enctype="multipart/form-data" class="formulario">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                            <img src="../assets/img/oraculo-respuesta-libre.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 pt-2">
+                            <label>Pregunta
+                                <select name="pregunta">
+                                    <option value="1">¿Cuál es el secreto para ser feliz?</option>
+                                    <option value="2">¿Por qué hay algo en vez de nada?</option>
+                                    <option value="3">¿Es el altruismo real o un mito?</option>
+                                    <option value="4">¿Tenemos libre albedrío?</option>
+                                </select>
+                            </label>
+                            <label>Respuesta
+                                <textarea></textarea>
+                            </label>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-1">
+                            <a href="./oraculo.html" class="btn btn-dark text-white">Enviar</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo" class="pointer">Valoración</label>
+        <div class="tab">
+            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                <img src="../assets/img/oraculo-valoracion.jpg" class="img-fluid">
+            </div>
+            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 pt-2">
+                <label>Preguntas
+                    <textarea></textarea>
+                </label>
+                <label>Atributo
+                    <select name="atributo">
+                        <option value="1">Sabiduria</option>
+                        <option value="2">Nobleza</option>
+                        <option value="3">Virtud</option>
+                        <option value="4">Maldad</option>
+                        <option value="5">Audacia</option>
+                    </select>
+                </label>
+                <label>Destino
+                    <select name="atributo">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </label>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-1">
+                <a href="./oraculo.html" class="btn btn-dark text-white">Enviar</a>
+            </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree" class="pointer">Elección</label>
+        <div class="tab">
+            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                <img src="../assets/img/oraculo-eleccion.jpg" class="img-fluid">
+            </div>
+            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 pt-2">
+                <label>Atributo
+                    <select name="atributo">
+                        <option value="1">¿Existe la justicia?</option>
+                        <option value="2">¿Eres libre en tus elecciones?</option>
+                        <option value="3">¿Puede haber vida tras la muerte?</option>
+                        <option value="4">¿Hay una sola moral?</option>
+                    </select>
+                </label>
+                <label>Respuesta
+                    <select name="respuesta">
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                </label>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-1">
+                <a href="./oraculo.html" class="btn btn-dark text-white">Enviar</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ESPACIO ENTRE PANEL Y FOOTER -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 py-5">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="w-100 flex-shrink-0 bg-dark">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+
+                <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
+                    <h5 class="h1 text-white">Panteón Griego.</h5>
+                    <p class="small text-muted">En esta página web organizamos el Panteón griego, con todas sus
+                        transacciones.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+                            href="https://github.com/jornu99/Client">Panteón Jaime</a></p>
+                </div>
+                <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
+                    <h5 class="text-white mb-3">Contáctanos en nuestras redes</h5>
+                    <ul class="redes-sociales list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/"><img src="../assets/img/facebook.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.twitter.com/"><img src="../assets/img/twitter.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/"><img src="../assets/img/youtube.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/"><img src="../assets/img/linkedin.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/"><img src="../assets/img/instagram.png" height="40"
+                                    width="40" class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.github.com/"><img src="../assets/img/github.png" height="40" width="40"
+                                    class="img-fluid logo" alt="Imagen del header logo"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
