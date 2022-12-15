@@ -2,7 +2,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
-const filesHTML = ['index.html', 'html/login.html', 'html/registro.html', 'html/zeus.html', 'html/poseidon.html', 'html/hades.html']//, 'html/humano.html', 'html/oraculo.html', 'html/puntuales.html', 'html/valoracion.html', 'html/eleccion.html']
+const filesHTML = ['index.html', 'html/login.html', 'html/registro.html', 'html/zeus.html', 'html/poseidon.html', 'html/hades.html', 'html/oraculo.html', 'html/puntuales.html', 'html/inicio.html']//, 'html/humano.html']
 
 module.exports = {
     mode: 'development',

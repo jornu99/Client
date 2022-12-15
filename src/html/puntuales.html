@@ -1,21 +1,17 @@
-<!-- CAMBIO SIN IMPORTANCIA -->
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hades</title>
+    <title>Puntuales</title>
     <link rel="icon" href="../assets/img/logo.png">
 </head>
 
-<body class="m-0 v-100 row justify-content-center align-item-center" style="background-image: url(../assets/img/fondo-hades.jpg);
-                background-size: cover;
-                background-attachment: fixed;
-                background-repeat: no-repeat;">
+<body class="m-0 v-100 row justify-content-center align-item-center fondo-puntuales">
 
     <!-- HEADER -->
-    <nav class=" navbar navbar-dark bg-dark">
+    <nav class=" navbar navbar-dark bg-dark z-front">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="60" width="60"
                     class="img-fluid logo" alt="Imagen del header logo"></a>
@@ -72,81 +68,68 @@
 
     <!-- BREADCRUMBS -->
     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-        aria-label="breadcrumb">
+        aria-label="breadcrumb" class="z-front">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="./hades.html">Hades</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="./puntuales.html">Puntuales</a></li>
         </ol>
     </nav>
 
-    <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 pt-5">
-
-        <!-- CAROUSEL -->
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <a href="./crea-pruebas.html">
-                    <div class="carousel-item active">
-                        <img src="../assets/img/hades-crea-prueba.png" class="d-block w-100"
-                            alt="img carousel hades crea prueba">
-                        <div class="carousel-caption d-none d-md-block borroso">
-                            <h4>Crear prueba</h4>
-                            <h6>Para crear pruebas de habilidad según un criterio específico a tus feligreses más
-                                adeptos.</h6>
+    <!-- PANEL -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-2 col-lg-2 col-md-1"></div>
+            <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone">Puntuales</label>
+                <div class="tab">
+                    <form action="" method="post" enctype="multipart/form-data" class="formulario">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <img src="../assets/img/oraculo-puntuales.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 pt-2">
+                                    <label>Atributo
+                                        <select name="atributo">
+                                            <option value="1">Sabiduria</option>
+                                            <option value="2">Nobleza</option>
+                                            <option value="3">Virtud</option>
+                                            <option value="4">Maldad</option>
+                                            <option value="5">Audacia</option>
+                                        </select>
+                                    </label>
+                                    <label>Descripción
+                                        <textarea></textarea>
+                                    </label>
+                                    <label>Dificultad
+                                        <input type="range" class="form-range" value="0" min="0" max="3" step="1">
+                                    </label>
+                                    <label>Destino
+                                        <select name="atributo">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-1">
+                                    <a href="./puntuales.html" class="btn btn-dark text-white">Enviar</a>
+                                </div>
+                            </div>
                         </div>
-                </a>
+                    </form>
+                </div>
             </div>
-            <div class="carousel-item">
-                <a href="./asigna-prueba.html">
-                    <img src="../assets/img/hades-asigna-prueba.png" class="d-block w-100"
-                        alt="img carousel hades asigna prueba">
-                    <div class="carousel-caption d-none d-md-block borroso">
-                        <h4>Asignar prueba</h4>
-                        <h6>Para designar a tus pruebas a los feligreses a tu discrección.</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="./crea-humano.html">
-                    <img src="../assets/img/hades-crea-humano-png.jpg" class="d-block w-100"
-                        alt="img carousel hades crea humano">
-                    <div class="carousel-caption d-none d-md-block borroso">
-                        <h4>Crear humano</h4>
-                        <h6>Para crear a uno o varios de tus feligreses, ya sea a conciencia o aleatoriamente.</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="./mata-humano.html">
-                    <img src="../assets/img/hades-mata-humano.jpg" class="d-block w-100"
-                        alt="img carousel hades mata humano">
-                    <div class="carousel-caption d-none d-md-block borroso">
-                        <h4>Matar humano</h4>
-                        <h6>Para enviar al descanso eterno a tus feligreses.</h6>
-                    </div>
-                </a>
-            </div>
+            <div class="col-xxl-2 col-lg-2 col-md-1"></div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
     </div>
 
     <!-- ESPACIO ENTRE PANEL Y FOOTER -->
