@@ -13,5 +13,3 @@
         npm install
 #### Para iniciar el webpack del desafío:
         npm start
-#### Para crear el dist en el webpack del desafío:
-        npm run build
