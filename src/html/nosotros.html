@@ -1,21 +1,20 @@
-<!-- CAMBIO SIN IMPORTANCIA -->
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hades</title>
+    <title>Inicio</title>
     <link rel="icon" href="../assets/img/logo.png">
 </head>
 
-<body class="m-0 v-100 row justify-content-center align-item-center" style="background-image: url(../assets/img/fondo-hades.jpg);
-                background-size: cover;
-                background-attachment: fixed;
-                background-repeat: no-repeat;">
+<body class="m-0 v-100 row justify-content-center align-item-center" style="background-image: url(../assets/img/fondo-index.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;">
 
     <!-- HEADER -->
-    <nav class=" navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" height="60" width="60"
                     class="img-fluid logo" alt="Imagen del header logo"></a>
@@ -74,80 +73,29 @@
     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
         aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="./hades.html">Hades</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="./nosotros.html">Sobre nosotros</a></li>
         </ol>
     </nav>
 
-    <div class="col-xxl-8 col-lg-8 col-md-10 col-sm-12 pt-5">
+    <div class="col-xxl-4 col-lg-6 col-md-8 col-sm-12 pt-3">
 
-        <!-- CAROUSEL -->
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
+        <!-- PANEL -->
+        <div class="card text-white bg-info">
+            <div class="card-header text-center">
+                <h2>Sobre nosotros...</h2>
+                <p>Soy un estudiante de Desarrollo de Aplicaciones Web del CIFP Virgen de Gracia de Puertollano. El
+                    olimpo, más bien el trío de hermanos regente de allí nos ha pedido que hagamos una página web para su
+                    administración.</p>
             </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h1>Crear prueba</h1>
-                    <img src="../assets/img/hades-crea-prueba.png" class="d-block w-100"
-                        alt="img carousel hades crea prueba">
-                    <div class="carousel-caption d-none d-md-block borroso">
-                        <h6>Para crear pruebas de habilidad según un criterio específico a tus feligreses más
-                            adeptos.</h6>
-                        <a href="./crea-prueba.html" class="btn cambiaColor zoom nitido" role="button">ENTRAR</a>
+            <div class="card-body">
+                <form>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center pt-1">
+                        <a href="../index.html" class="btn btn-dark text-white tuerce">Casa</a>
+                        <a href="./inicio.html" class="btn btn-dark text-white cambiaPosicion3D">Inicio</a>
                     </div>
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h1>Asignar prueba</h1>
-                    <img src="../assets/img/hades-asigna-prueba.png" class="d-block w-100"
-                        alt="img carousel hades asigna prueba">
-                    <div class="carousel-caption d-none d-md-block borroso">
-                        <h6>Para designar a tus pruebas a los feligreses a tu discrección.</h6>
-                        <a href="./asigna-prueba.html" class="btn cambiaColor zoom nitido" role="button">ENTRAR</a>
-                    </div>
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h1>Crear humano</h1>
-                    <img src="../assets/img/hades-crea-humano-png.jpg" class="d-block w-100"
-                        alt="img carousel hades crea humano">
-                    <div class="carousel-caption d-none d-md-block borroso">
-                        <h6>Para crear a uno o varios de tus feligreses, ya sea a conciencia o aleatoriamente.</h6>
-                        <a href="./crea-humano.html" class="btn cambiaColor zoom nitido" role="button">ENTRAR</a>
-                    </div>
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h1>Matar humano</h1>
-                    <img src="../assets/img/hades-mata-humano.jpg" class="d-block w-100"
-                        alt="img carousel hades elimina humano">
-                    <div class="carousel-caption d-none d-md-block borroso">
-                        <h6>Para enviar al descanso eterno a tus feligreses.</h6>
-                        <a href="./elimina-humano.html" class="btn cambiaColor zoom nitido" role="button">ENTRAR</a>
-                    </div>
-                    </a>
-                </div>
+                </form>
             </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
 
@@ -161,7 +109,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="w-100 flex-shrink-0 bg-dark">
+    <footer class="w-100 flex-shrink-0 bg-dark fo-down">
         <div class="container py-4">
             <div class="row gy-4 gx-5">
 

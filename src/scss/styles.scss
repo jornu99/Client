@@ -5,13 +5,14 @@
 @import "animaciones";
 
 body {
+
     // GENERAL --
     a:link {
-        color: rgb(255, 111, 0);
+        color: rgb(255, 81, 0);
     }
 
     a:visited {
-        color: #3f88c7;
+        color: #e60000;
     }
 
     a:focus {
@@ -29,10 +30,20 @@ body {
         color: #ffffff;
     }
 
+    .navbar-nav {
+        text-align: right;
+    }
+
+    ul {
+        li {
+            text-align: right;
+        }
+    }
+
     .fo-down {
         background: black;
         width: 100%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
     }
@@ -77,6 +88,13 @@ body {
                 background-color: rgba(0, 0, 0, 0.15);
                 backdrop-filter: blur(10px);
             }
+
+            .nitido {
+                border: solid 2px #ffffff;
+                background-color: rgba(0, 0, 0, 0.15);
+                backdrop-filter: blur(50px);
+            }
+
         }
     }
 
